@@ -1,0 +1,11 @@
+{
+  "name": "how_to_tabs",
+  "version": "1.0.0",
+  "description": "Practice with building tab functionality in JS",
+  "main": "jakefile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harry Levine",
+  "license": "ISC"
+}
