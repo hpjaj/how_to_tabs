@@ -1,6 +1,7 @@
 {
   "name": "how_to_tabs",
   "version": "1.0.0",
+  "private": true,
   "description": "Practice with building tab functionality in JS",
   "main": "jakefile.js",
   "scripts": {
