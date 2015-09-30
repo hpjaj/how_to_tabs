@@ -21,4 +21,11 @@
     }
   });
 
+  desc("Lint JavaScript code");
+  task("lint", function() {
+    console.log("Linting JavaScript: .");
+
+    jake.exec("node node_modules/jshint/bin/jshint Jakefile.js", { interactive: true }, complete);
+  }, { async: true });
+
 }());
