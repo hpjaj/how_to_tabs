@@ -4,7 +4,7 @@
   var semver = require("semver");
 
   desc("Default build");
-  task("default", [ "version" ], function() {
+  task("default", [ "version", "lint" ], function() {
     console.log("\n\nBUILD OK");
   });
 
