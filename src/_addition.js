@@ -14,7 +14,7 @@
     });
 
     function assertEqual(actual, expected) {
-      if (actual !== expected) throw new Error("expected" + expected + ", but was " + actual);
+      if (actual !== expected) throw new Error("expected " + expected + ", but was " + actual);
     }
 
   });
