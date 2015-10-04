@@ -62,10 +62,8 @@
     console.log("Testing JavaScript");
     karma.run({
       configFile: KARMA_CONFIG,
-      expectedBrowsers: [
-        "Chrome 45.0.2454 (Mac OS X 10.10.5)",
-        "Safari 9.0.0 (Mac OS X 10.10.5)"
-      ]
+      expectedBrowsers: testBrowsers(),
+      strict: !process.env.loose
     }, complete, fail);
   }, { async: true });
 
@@ -100,6 +98,13 @@
       beforeEach: false,
       afterEach: false
     };
+  }
+
+  function testBrowsers() {
+    return [
+      "Chrome 45.0.2454 (Mac OS X 10.10.5)",
+      "Safari 9.0.0 (Mac OS X 10.10.5)"
+    ];
   }
 
 }());
